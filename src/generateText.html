@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduBuddyAI - On-demand Education</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Logo and Nav Items -->
+            <a href="index.html" class="navbar-brand">EduBuddy<span class="ai-color">AI</span></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html#aboutUsSection" class="nav-link link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#contactUsSection" class="nav-link link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" id="accountAction" class="nav-link link">Enter your account</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="chat-container">
+            <div class="chat-box" id="chat-box">
+                <div class="chat-messages" id="chatMessages"></div>
+                <div class="chat-ai">
+                    <img class="student-hat" src="Img/studentHat.png" alt="">
+                    <h3 class="help-today">How can I help you today?
+                    </h3>
+                </div>
+            </div>
+            <div id="inputGroup" class="input-group">
+                <input type="text" class="chat-input" id="chatInput" placeholder="Ask your question here...">
+                <div class="input-group-append">
+                    <button type="button" id="sendButton" class="send-button">
+                        <i class="bi bi-arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="loginContainer" class="form-hidden">
+                <p id="loginMessage" class="login-message">You need to connect to your account to use EduBuddy</p>
+                <button id="loginButton" class="btn btn-danger">Log In</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bootstrap and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Scripts -->
+    <script type="module" src="generate.js"></script>
+    <script type="module" src="index.js"></script>
+    <script src="authCheck.js"></script>
+</body>
+
+</html>

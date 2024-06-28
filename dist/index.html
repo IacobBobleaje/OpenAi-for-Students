@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduBuddyAI - On-demand Education</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Mantine CSS -->
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/style.e308ff8e.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+
+<script src="/style.e308ff8e.js"></script></head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Logo and Nav Items -->
+            <a href="/index.html" class="navbar-brand">EduBuddy<span class="ai-color">AI</span></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#aboutUsSection" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contactUsSection" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/login.html" class="nav-link">Enter your account</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="hero-section">
+        <div class="container text-center">
+           <h1 class="start-learning-h1">On-demand education for everyone</h1>       
+           <div class="start-learning-btn"><a href="/generateText.html" class="btn">Start Learning</a></div>
+        </div>
+    </main>
+<div>
+    <div class="learning-style-container">
+        <div class="learning-style">
+            <img src="/learning-style.079dfe06.jpg" alt="learning-style">
+        </div>
+        <div class="learning-style-p">
+            <h2>Learning styles are different ways in which people process and understand information.</h2>
+            <br>
+            <h5 class="Visual"> 
+                Visual: People who prefer this learning style understand and remember information best when they see it in the form of pictures, diagrams, or written texts. They can more easily retain and understand information presented visually.
+            </h5>
+            <h5 class="Auditory">
+                Auditory: Those who adopt this learning style understand and retain information better when they hear it. They prefer oral explanations, discussions, or listening to audio recordings to understand and assimilate the content.  
+            </h5>
+            <h5 class="Tactile">
+                Tactile: People who identify with this learning style understand and retain information better when they experience it or put it into practice. They prefer to feel or do something to better understand the content, such as hands-on work or using tactile materials.
+            </h5>
+        
+    </div>
+   
+</div>
+
+<div id="aboutUsSection">
+    <div class="learning-style-container">
+        <div class="develop-text">
+            <h2 class="about-text">About us</h2>
+           <br>
+            <h4 class="Visual">
+                At EduBuddyAI, we recognize the power of visual learning and its importance in educational diversity. Our platform is engineered to support students who grasp concepts best through visual cues and data representation, using advanced AI to tailor the learning experience to each individual's needs.
+                <br>
+                <br>
+                Understanding Visual Learning
+                Visual learning is a method where information is best understood and remembered when presented in a visual context. This style is ideal for those who prefer to see information to comprehend it effectively, utilizing formats such as written words, charts, and conceptual maps in their mental visualization.
+            </h4>
+        </div>
+        <div class="develop">
+            <img class="develop" src="/develop.0f374e3d.jpg" alt="develop">
+        </div>
+       
+    </div>
+</div>
+</div>
+
+
+<div id="contactUsSection">
+<div class="learning-style-container">
+    <div class="develop-text">
+        <h2 class="about-text">Contact Us</h2><br>
+      <h4 class="about-text">
+        We're here to help! If you have any questions, feedback, or need assistance, don't hesitate to reach out. Contact us at any time and our dedicated team will get back to you as soon as possible. Your insights and experiences are invaluable to us as we strive to provide the best educational tools and support. </h4><br>
+        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2855.0576028572095!2d23.835080100000003!3d44.308766299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d702cd0f3173%3A0xb159446a3e899375!2sFacultatea%20de%20Automatic%C4%83%20%C8%99i%20Electronic%C4%83!5e0!3m2!1sro!2sro!4v1715161836588!5m2!1sro!2sro" width="700" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+    <div id="contactUs" class="learning-style-container">
+        <form id="contact-form" class="contact-form">
+            <div class="in-touch">
+                <h2 class="get-in">Get in touch</h2>
+            </div>
+            <div class="inp-name">
+                <h6>Name</h6>
+                <input type="text" id="ContactName" name="name" placeholder="Your Name" required="">
+            </div>
+            <div class="inp-name">
+                <h6>Email</h6>
+                <input type="email" id="ConctactEmail" name="email" placeholder="Your Email" required="">
+            </div>
+            <div class="inp-name">
+                <h6>Phone</h6>
+                <input type="text" id="ConctactPhone" name="phone" placeholder="Your Phone">
+            </div>
+            <div class="inp-name">
+                <h6>Message</h6>
+                <textarea name="message" id="ConctactMessage" placeholder="Your Message" rows="8" required=""></textarea>
+            </div>
+            <div class="inp-name">
+                <button type="submit" class="btn contact-submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+</div>
+</div>
+
+ 
+
+    <!-- Bootstrap and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Scripts -->
+   
+    <script type="module" src="/auth.c7260aee.js"></script>
+    <script type="module" src="/src.e31bb0bc.js"></script>
+    
+
+</body>
+
+</html>

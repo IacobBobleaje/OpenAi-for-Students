@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - EduBuddyAI</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Mantine CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/mantine/core@latest/lib/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase Compatibility SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Logo and Nav Items -->
+            <a href="index.html" class="navbar-brand">EduBuddy<span class="ai-color">AI</span></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html#aboutUsSection" class="nav-link link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#contactUsSection" class="nav-link link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" id="accountAction" class="nav-link link">Enter your account</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="login-container">
+        <div class="container">
+            <div id="formContainer">
+                <!-- Toggle Buttons -->
+                <div class="toggle-buttons text-center mb-3">
+                    <button id="toggleLogIn" class="btn btn-outline-info">Log-In</button>
+                    <button id="toggleSignIn" class="btn btn-outline-success">Sign-In</button>
+                </div>
+                <!--Login Form -->
+                <form id="loginForm">
+                    <div class="form-group input-small">
+                        <label for="emailLogin">Email address</label>
+                        <input type="email" class="form-control" id="emailLogin" placeholder="Enter email">
+                    </div>
+                    <div class="form-group input-small">
+                        <label for="passwordLogin">Password</label>
+                        <input type="password" class="form-control" id="passwordLogin" placeholder="Password">
+                    </div>
+                    <button type="button" id="loginButton" class="btn btn-danger">Log-In</button>
+                </form>
+                <!-- Sign-In Form (initially hidden) -->
+                <form id="signInForm" class="form-hidden">
+                    <div class="form-group input-small">
+                        <label for="nameSignIn">Name</label>
+                        <input type="text" class="form-control" id="nameSignIn" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group input-small">
+                        <label for="emailSignIn">Email address</label>
+                        <input type="email" class="form-control" id="emailSignIn" placeholder="Enter email">
+                    </div>
+                    <div class="form-group input-small">
+                        <label for="passwordSignIn">Password</label>
+                        <div class="password-input">
+                            <input type="password" class="form-control" id="passwordSignIn" placeholder="Password">
+                            <span class="toggle-password">
+                                <i class="fa fa-eye"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group input-small">
+                        <label for="confirmPasswordSignIn">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPasswordSignIn"
+                            placeholder="Confirm Password">
+                    </div>
+                    <button type="button" class="btn btn-danger" id="signUpButton">Sign-In</button>
+                </form>
+            </div>
+            <!-- Welcome Message and Logout Button -->
+            <div id="accountInfo" class="form-hidden account-container">
+                <h2 id="welcomeMessage" class="welcome-message"></h2>
+                <button id="logoutButton" class="btn btn-danger logout-button">Log Out</button>
+            </div>
+        </div>
+        <img id="accountPhotos" src="Img/login.png" alt="Login"  class="account-image">
+        <img id="accountPhotos" src="Img/yourAccount.png" alt="Your Account" class="login-image">
+    </main>
+
+    <!-- Bootstrap and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="auth.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

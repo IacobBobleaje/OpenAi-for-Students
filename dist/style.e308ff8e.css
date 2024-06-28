@@ -1,0 +1,624 @@
+/* Main body style */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    /* Light grey background, common for modern designs */
+}
+
+/* Header styles */
+.header {
+    background-color: #15ff00;
+    /* Bootstrap primary color */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #343a40;
+    /* Bootstrap dark */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Adjustments for content area */
+.content {
+    padding: 20px;
+}
+
+/* Resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Navigation Bar */
+.ai-color {
+    color: #FF6363;
+}
+
+.site-header .navbar {
+    background-color: #f6f6f6;
+    box-shadow: 0 2px 4px rgba(10, 10, 10, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #BAFFB4;
+}
+
+.navbar-nav .nav-link {
+    color: #BAFFB4;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #af4141;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background: url('/ai-brain.10208e48.jpg') no-repeat center center;
+    background-size: cover;
+    height: 900px; /* Adjust height as needed */
+    color: #FFFFFF; /* Ensures text is white for better visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(179, 98, 255, 0.575); /* Purple color with 50% opacity */
+    z-index: 1; /* Ensures the overlay is above the background image but below the text */
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.start-learning-btn{
+   padding-left: 43%;
+   padding-top: 5%;
+   font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+   
+}
+
+.start-learning-h1{
+    padding-left: 7%;
+    padding-top: 20%;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+ }
+ 
+
+.hero-section .btn {
+    padding: 10px 30px;
+    background-color: #ff003cc7;
+    border: none;
+    max-width: fit-content;
+    display: flex;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 30px 0;
+    }
+}
+
+.input-small {
+    max-width: 250px;
+    /* Or whatever size fits your design */
+
+}
+
+.form-hidden {
+    display: none;
+}
+
+/* ... existing styles ... */
+
+.valid-input {
+    border-color: green !important;
+}
+
+.invalid-input {
+    border-color: red !important;
+}
+
+/* Define the styles for valid and invalid inputs including the box-shadow for focus state */
+.valid-input,
+.valid-input:focus {
+    border-color: green;
+    box-shadow: 0 0 0 0.2rem rgba(0, 255, 0, 0.25);
+}
+
+.invalid-input,
+.invalid-input:focus {
+    border-color: red;
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+}
+
+/* CSS for eye icon */
+.password-input {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Hide eye icon when password is visible */
+.password-input input[type="password"]+.toggle-password i.fa-eye-slash {
+    display: none;
+}
+
+.custom-notification {
+    background-color: #7ae76e;
+    position: fixed;
+    top: -100px;
+    /* start hidden above the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    transition: top 0.3s ease-in-out;
+    z-index: 1000;
+    /* default green background for success */
+}
+
+
+
+.custom-notification.error {
+    background-color: #f37777;
+    position: fixed;
+    top: -100px;
+    /* start hidden above the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    transition: top 0.3s ease-in-out;
+    z-index: 1000;
+    /* Red background for error */
+}
+
+.custom-notification-icon {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+}
+
+.custom-notification-text {
+    line-height: 1.4;
+}
+
+
+/* generate-tab style */
+.chat-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 10px; /* Added padding inside the container */
+    box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
+.chat-box {
+    height: 800px;
+    overflow-y: scroll;
+    padding: 15px;
+    margin-bottom: 10px; /* Adds space between chat box and input group */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+.chat-box::-webkit-scrollbar {
+    display: none;
+}
+
+.input-group {
+    display: flex;  /* Ensures the input and button align horizontally */
+    width: 100%;  /* Full width to align with chat-box above */
+    align-items: stretch; /* Aligns the items vertically so they fill the container */
+}
+
+.chat-input {
+    flex-grow: 1;  /* The input field will occupy the remaining space */
+    border: 1px solid #ccc;  /* Consistent border for clarity */
+    padding: 12px 12px;  /* Sufficient padding inside the input */
+    border-right: none;  /* Removes the right border where the button aligns */
+    border-radius: 15px 0 0 15px;  /* Rounded corners on the left side only */
+    height: 48px;  /* Ensures the input field has the same height as the button */
+    width:150px ;
+    box-sizing: border-box;  /* Includes padding and border in the height calculation */
+}
+
+.chat-input:focus {
+    outline: none !important; /* Ensures no outline is applied */
+    box-shadow:none !important; /* Custom focus glow in green */
+}
+
+
+
+.send-button {
+    width: 49px;
+    height: 48px;  /* Explicit height to match the input field */
+    border: 1px solid #cccccc;  /* Consistent border for clarity */
+    border-left: none;  /* Removes the left border to blend with the input */
+    background-color: #ff0051;  /* Primary blue color for the button */
+    color: rgb(255, 255, 255);
+    border-radius: 0 15px 15px 0;  /* Rounded corners on the right side only */
+    display: flex;
+    align-items: center;  /* Centers the icon vertically */
+    justify-content: center;  /* Centers the icon horizontally */
+}
+.send-button:focus {
+    outline: white !important; /* Ensures no outline is applied */
+    box-shadow:none !important; /* Custom focus glow in green */
+}
+.send-button:hover{
+background-color: #e10047;
+}
+.hero-section .btn-primary {
+    background-color: #FF6347; /* Tomato color for visibility, adjust as desired */
+    border-color: #FF6347; /* Consistent with button background */
+}
+
+.bi-arrow-up {
+    font-size: 20px;  /* Adjust the size of the icon if needed */
+}
+
+.help-today{
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.container {
+    display: block;
+    position: relative; /* Positions text and button over the background */
+    z-index: 2; 
+    justify-content: center; /* horizontally centers the image */
+    align-items: center; /* vertically centers the image */
+    height: 60vh; /* sets the container height to full viewport height, adjust as needed */
+  }
+  
+  .student-hat {
+    /* Add any additional styling for the image here */
+    max-width: 8%; /* Ensure the image does not exceed the container width */
+    max-height: 8%; /* Ensure the image does not exceed the container height */
+  }
+  
+  /* generate-tab style */
+.chat-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 10px; /* Added padding inside the container */
+    box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
+.chat-box {
+    height: 800px;
+    overflow-y: scroll;
+    padding: 15px;
+    margin-bottom: 10px; /* Adds space between chat box and input group */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+.chat-box::-webkit-scrollbar {
+    display: none;
+}
+
+.input-group {
+    display: flex;  /* Ensures the input and button align horizontally */
+    width: 100%;  /* Full width to align with chat-box above */
+    align-items: stretch; /* Aligns the items vertically so they fill the container */
+}
+
+.chat-input {
+    flex-grow: 1;  /* The input field will occupy the remaining space */
+    border: 1px solid #ccc;  /* Consistent border for clarity */
+    padding: 12px 12px;  /* Sufficient padding inside the input */
+    border-right: none;  /* Removes the right border where the button aligns */
+    border-radius: 15px 0 0 15px;  /* Rounded corners on the left side only */
+    height: 48px;  /* Ensures the input field has the same height as the button */
+    width:150px ;
+    box-sizing: border-box;  /* Includes padding and border in the height calculation */
+}
+
+.chat-input:focus {
+    outline: none !important; /* Ensures no outline is applied */
+    box-shadow:none !important; /* Custom focus glow in green */
+}
+
+
+
+.send-button {
+    width: 49px;
+    height: 48px;  /* Explicit height to match the input field */
+    border: 1px solid #cccccc;  /* Consistent border for clarity */
+    border-left: none;  /* Removes the left border to blend with the input */
+    background-color: #ff0051;  /* Primary blue color for the button */
+    color: rgb(255, 255, 255);
+    border-radius: 0 15px 15px 0;  /* Rounded corners on the right side only */
+    display: flex;
+    align-items: center;  /* Centers the icon vertically */
+    justify-content: center;  /* Centers the icon horizontally */
+}
+.send-button:focus {
+    outline: white !important; /* Ensures no outline is applied */
+    box-shadow:none !important; /* Custom focus glow in green */
+}
+.send-button:hover{
+background-color: #e10047;
+}
+
+
+.bi-arrow-up {
+    font-size: 20px;  /* Adjust the size of the icon if needed */
+}
+
+.help-today{
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.chat-ai {
+    display: flex;
+    justify-content: center; /* horizontally centers the image */
+    align-items: center; /* vertically centers the image */
+    height: 70vh; /* sets the container height to full viewport height, adjust as needed */
+  }
+  
+  .student-hat {
+    /* Add any additional styling for the image here */
+    max-width: 8%; /* Ensure the image does not exceed the container width */
+    max-height: 8%; /* Ensure the image does not exceed the container height */
+  }
+  
+
+  /* about us section */
+
+  .learning-style-container {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start of the container (left side) */
+    align-items: center; /* Center items vertically */
+    max-width: 100%;
+    padding-top: 150px;
+    background-color: #cccccc38;
+    border-radius: 100px;
+    margin-top: 60px;
+    margin-right: 200px;
+    margin-left: 200px;
+    padding-bottom: 35px;
+}
+
+.learning-style {
+    max-width: 100%; /* Adjust as needed */
+  
+    
+}
+
+.learning-style img {
+    max-width: 80%; /* Make sure the image fits inside its container */
+    padding: 15px;
+    padding-left: 50px;
+    border-radius: 15%;
+    margin-bottom: 15%;
+    
+}
+
+.learning-style-p {
+    max-width: 40%; /* Adjust as needed */
+    padding: 15px;
+    padding-right: 50px;
+    border-radius: 25%;
+    margin-bottom: 10%;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Tactile{
+    background-color: #eef1bc;
+    padding: 10px;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 15px;
+}
+
+.Auditory{
+    background-color: #ffc6b5;
+    padding: 10px;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 15px;
+    
+}
+
+.Visual{
+   
+    background-color: #9dced3;
+    padding: 10px;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 15px;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the div without distorting */
+}
+
+.hero-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(128, 0, 128, 0.363); /* Purple color with transparency */
+    z-index: 2;
+}
+
+.develop{
+    margin-left: 6%;
+    margin-right: 5%;
+    max-width: 100%;
+    margin-bottom: 5%;
+    border-radius: 55px;
+}
+
+.develop-text{
+    text-align: center;
+    padding-left: 90px;
+    max-width: 50%;
+    margin-bottom: 5%;
+}
+
+.about-text{
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.maps{
+    border-radius: 35px;
+    
+}
+
+
+.get-in{
+    padding-right: 0%;
+    padding-left: 28%;
+   
+}
+
+
+.inp-name {
+    width: 80%;  /* Each input field takes full width of the form */
+    margin: 0px 250px;  /* Adds space between the input fields */
+    margin-left: 40px;
+    padding-top: 10%;
+    
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="number"],
+.contact-form textarea {
+    width: calc(100% - 20px);  
+    padding: 10px;
+    margin: 10px 10px;  
+    border: 1px solid #cdbdbd;
+    border-radius: 10px;  
+}
+
+.contact-form .btn.contact-submit {
+    width: 150px;  /* Makes the button take the full width of the form */
+    padding: 10px;
+    background-color: #ff001e;  /* Bootstrap primary button color, can be customized */
+    margin-left: 28%;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;  /* Shows a pointer cursor on hover */
+    margin-bottom: 70px;  /* Adds space between the last input and the button */
+}
+
+
+
+textarea {
+    height: 200px; /* Allows height to grow based on rows */
+    width: 95%;
+    resize: none;
+    border-radius: 10px;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+.ai-profile-pic {
+    width: 30px; /* Small size for the profile icon */
+    height: 30wpx;
+    margin-right: 10px; /* Space between the icon and the text */
+    vertical-align: middle; /* Align the icon with the text */
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

@@ -1,0 +1,168 @@
+/* Main body style */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    /* Light grey background, common for modern designs */
+}
+
+/* Header styles */
+.header {
+    background-color: #007bff;
+    /* Bootstrap primary color */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #343a40;
+    /* Bootstrap dark */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Adjustments for content area */
+.content {
+    padding: 20px;
+}
+
+/* Resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Navigation Bar */
+.ai-color {
+    color: #FF6363;
+}
+
+.site-header .navbar {
+    background-color: #f6f6f6;
+    box-shadow: 0 2px 4px rgba(10, 10, 10, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #BAFFB4;
+}
+
+.navbar-nav .nav-link {
+    color: #BAFFB4;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #af4141;
+}
+
+/* generate-tab style */
+.chat-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 10px; /* Added padding inside the container */
+    box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
+.chat-box {
+    height: 800px;
+    overflow-y: scroll;
+    padding: 15px;
+    margin-bottom: 10px; /* Adds space between chat box and input group */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+.chat-box::-webkit-scrollbar {
+    display: none;
+}
+
+.input-group {
+    display: flex;  /* Ensures the input and button align horizontally */
+    width: 100%;  /* Full width to align with chat-box above */
+    align-items: stretch; /* Aligns the items vertically so they fill the container */
+}
+
+.chat-input {
+    flex-grow: 1;  /* The input field will occupy the remaining space */
+    border: 1px solid #ccc;  /* Consistent border for clarity */
+    padding: 12px 12px;  /* Sufficient padding inside the input */
+    border-right: none;  /* Removes the right border where the button aligns */
+    border-radius: 15px 0 0 15px;  /* Rounded corners on the left side only */
+    height: 48px;  /* Ensures the input field has the same height as the button */
+    width:150px ;
+    box-sizing: border-box;  /* Includes padding and border in the height calculation */
+}
+
+.chat-input:focus {
+    outline: none !important; /* Ensures no outline is applied */
+    box-shadow:none !important; /* Custom focus glow in green */
+}
+
+
+
+.send-button {
+    width: 49px;
+    height: 48px;  /* Explicit height to match the input field */
+    border: 1px solid #cccccc;  /* Consistent border for clarity */
+    border-left: none;  /* Removes the left border to blend with the input */
+    background-color: #ff0051;  /* Primary blue color for the button */
+    color: rgb(255, 255, 255);
+    border-radius: 0 15px 15px 0;  /* Rounded corners on the right side only */
+    display: flex;
+    align-items: center;  /* Centers the icon vertically */
+    justify-content: center;  /* Centers the icon horizontally */
+}
+.send-button:focus {
+    outline: white !important; /* Ensures no outline is applied */
+    box-shadow:none !important; /* Custom focus glow in green */
+}
+.send-button:hover{
+background-color: #e10047;
+}
+
+
+.bi-arrow-up {
+    font-size: 20px;  /* Adjust the size of the icon if needed */
+}
+
+.help-today{
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* horizontally centers the image */
+    align-items: center; /* vertically centers the image */
+    height: 70vh; /* sets the container height to full viewport height, adjust as needed */
+  }
+  
+  .student-hat {
+    /* Add any additional styling for the image here */
+    max-width: 8%; /* Ensure the image does not exceed the container width */
+    max-height: 8%; /* Ensure the image does not exceed the container height */
+  }
+  
+
+/*# sourceMappingURL=/style-generate.e2aa0fd5.css.map */
